@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Practica 7 JavaScript</title>
+  </head>
+  <body>
+       <button type="button" name="dospuntos" onclick="dospuntos();"> Iniciar la actividad</button>
+       <script>
+           // crea una funcion en la cual saludes al usuario despues le pidas su nombre, edad, carrera y le devuelvas
+           // los datos en una alerta dandole una saludo afectuoso y diciendole si es menor o mayor de edad.
+           function dospuntos(){
+           var nombre, edad, edad1, carrera , resultado;
+           alert("Hola como estas bienvenido(a) a esta practica con JavaScript");
+           nombre = window.prompt("Por favor ingresa tu nombre");
+           edad = window.prompt("Por favor ingresa tu edad");
+           edad1 = parseInt(edad);
+           carrera = window.prompt("Por favor ingresa tu carrera");
+           if(edad1 > 18){
+             resultado = "Eres mayor de edad";
+           }
+           else{
+             resultado = "Eres Menor de edad";
+           }
+            alert("Tu eres: " + nombre + "Tu edad es: " + edad1 + "Tu estudias la carrera de: " + carrera + "Por lo tanto eres: " + resultado);
+          }
+       </script>
+  </body>
+</html>

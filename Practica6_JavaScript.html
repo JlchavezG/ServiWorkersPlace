@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Comparacion de numeros con JavaScript</title>
+  </head>
+  <body>
+  <div class="inicio">
+       <button type="button" name="calcular" onclick="Comparar();" class="botoncito"> Calcular</button>
+  </div>
+    <script>
+       function Comparar(){
+       // solicitarle al usuario 2 numeros enteros por medio del prompt indicarle cual es el mayor
+       // ejemplo 12 y 5
+       // declaramos variables
+       var dato1, dato2, num1, mun2 , resultado;
+       // solicitamos el primer valor
+       dato1 = window.prompt("Por favor ingresa el primer numero");
+       // pasamos el primer valor a entero
+       num1 = parseInt(dato1);
+       // solicitamos el segundo valor
+       dato2 = window.prompt("Ingresa el segundo numero");
+       // pasamos el segundo valor a entero
+       num2 = parseInt(dato2);
+       // comparamos que el primer valor fuera mayor al segundo valor
+       if(num1 > num2){
+         // si la condicion se cumple
+         resultado = "El numero uno es mayor al numero 2 ";
+       }
+         // si la condicion no se cumple
+       else{
+         resultado = "El numero 2 es mayor al numero 1 ";
+       }
+       // imprimimos el resultado
+       document.write("Se concluye la operacion " + resultado);
+     }
+    </script>
+    <style>
+       .inicio{
+         width: 100%;
+         align: center;
+         pading: 20px, 20px, 20px, 20px;
+         margin: auto;
+       }
+       .botoncito{
+         background: green;
+         width: 150px;
+         border: 2px solid pink;
+         border-radius: 10px;
+         color:white;
+         cursor:pointer;
+       }
+    </style>
+  </body>
+</html>

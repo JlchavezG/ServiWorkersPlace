@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Actividad de Entendimiento</title>
+  </head>
+  <body>
+     <p>Verifica las opciones de los docentes y escribela en el aplicativo el nombre del docente para que te diga que carrera estudias</p>
+     <ul>
+       <li>Profesora Menes</li>
+       <li>Selene</li>
+       <li>Abigail</li>
+       <li>Javier</li>
+     </ul>
+     <button type="button" name="button" onclick="trabajo();">Iniciar la accion</button>
+     <button type="button" name="button" onclick="saludar();">¿Quieres que te salude?</button>
+     <script>
+      // solicitar el nombre y la carrera que se cursa y le incaremos cual el nombre tecnico que tendra
+      function trabajo(){
+      let nombres, carrera, resultado;
+      nombres = window.prompt("Hola por favor ingresa tu nombre");
+      carrera = window.prompt("Ingresa al profesor que te da clases de la lista anterior");
+      carrera1 = 'Profesora Menes';
+      carrera2 = 'Selene';
+      carrera3 = 'Abigail';
+      carrera4 = 'Javier';
+      document.write("Hola  "+ nombres);
+      if(carrera == carrera1 ){
+        document.write("Tu estudias la carrera de Contabilidad");
+      }
+      else if (carrera == carrera2 ) {
+        document.write("Tu estudias la carrera de Alimentos y bebidad");
+      }
+      else if (carrera == carrera3 ) {
+        document.write("Tu estudias la carrera de Hospitalidad Turistica");
+      }
+      else if (carrera == carrera4) {
+        document.write("Tu estudias la carrera de Informatica");
+      }
+      else{
+        alert("No estudias ninguna carrera");
+      }
+    }
+    function saludar(){
+      alert("Hola como estas espero que muy bien !!");
+    }
+     </script>
+  </body>
+</html>

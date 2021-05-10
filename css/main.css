@@ -1,0 +1,46 @@
+*{
+  padding: 0px;
+}
+body{
+  background: #000;
+  color:#ff0080;
+}
+h1{
+  color:#fff;
+  text-align: center;
+}
+.container{
+   width: 100%;
+}
+.imagenes{
+  width: 100%;
+  text-align: center;
+  border:2px solid #fff;
+}
+.img1{
+  position: relative;
+  float: left;
+  padding: 20px;
+}
+.texto{
+  width: 100%;
+}
+.redondo{
+  border-radius: 50%;
+  border:2px solid red;
+}
+.redondo:hover{
+  width: 200px;
+  transform: 2s;
+  transition: 3s;
+  cursor: pointer;
+}
+.noredondo{
+  border-radius: 20%;
+  border:2px solid blue;
+}
+.boton{
+  width: 300px;
+  background: pink;
+  color: #000;
+}
