@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login | Inicio de sesión</title>
+  </head>
+  <body>
+     <h1>Inicio de sesión del sistema</h1>
+     <hr>
+     <div class="contenedor">
+          <div class="formulario">
+             <p>Ingresa tus datos por favor !</p>
+              <form class="" action="login.html" method="post">
+                   <input type="text" name="usuario" placeholder="Usuario" id="user">
+                   <input type="password" name="password" placeholder="Password" id="pass">
+                   <input type="submit" name="entrar" value="Ingresar" class="boton">
+              </form>
+          </div>
+     </div>
+     <style>
+            .contenedor{
+              width: 50%;
+              margin: 0 auto;
+              padding: 90px;
+              background: pink;
+              color: white;
+            }
+            .formulario{
+              width: 50%;
+              margin: 0 auto;
+            }
+            .boton {
+              width: 150px;
+              border-radius: 10px;
+              background: blue;
+              color: #fff;
+            }
+     </style>
+     <script>
+         var usuario = document.getElemetById("user").value;
+         var password = document.getElemetById("pass").value;
+         var user1 = 'luis';
+         var pass1 = 'queshow';
+         if(usuario == user1 and password == pass1){
+
+         }
+     </script>
+  </body>
+</html>
