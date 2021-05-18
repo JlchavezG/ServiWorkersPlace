@@ -2,12 +2,46 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
     <title>Prueba GitHub</title>
   </head>
   <body>
-      <h2>Prueba de creación de repositorios</h2>
+      <!-- generar un juego de sumas y restas en donde el usuario pueda interactuar con la pagina -->
+      <!-- el fondo debe de ser color gris con las letras blancas y los botes azules con blanco -->
+      <h1>Bienvenido al Juego de Sumas</h1>
+      <button type="button" name="button" onclick="saludar()" class="botones"> Saludar</button>
+      <hr>
+         <div class="container">
+            <p>Intrucciones: selecciona la respuesta que consideres correcta dentro de los botones se encuentra la suma que da el resultado : </p>
+            <div class="Sumas">
+                <h2>19</h2>
+                <h2>22</h2>
+                <h2>67</h2>
+            </div>
+            <div class="botones">
+                  <button type="button" name="resultado1" onclick="correcto();" class="botones"> 14 + 5 </button>
+                  <button type="button" name="resultado1" onclick="incorrecto();" class="botones"> 14 + 23 </button>
+                  <button type="button" name="resultado1" onclick="incorrecto();" class="botones"> 5 + 5 </button>
+            </div>
+            <div class="multiplica">
+                <hr>
+                <p>cocola el resultado de la siguiente multiplicción</p>
+                <h2> 9 x 8 =</h2>
+                <input type="text" id="multiplicacion" placeholder="Escribe el resultado">
+                <button type="button" name="button" class="botones" onclick="multi();"> Responder</button>
+            </div>
+         </div>
       <script>
-           alert("Bienbenidos ya estas utilizando GitHub");
+           function correcto(){
+             alert("Muy bien sigue asi eres todo crack !!!");
+           }
+           function incorrecto(){
+                alert("Lo siento sigue intentando !!!");
+           }
+           function saludar(){
+           var nombre = window.prompt("Por favor ingresa tu nombre: ");
+           alert("Bienbenido ya estas utilizando GitHub: "+ nombre );
+         }
       </script>
   </body>
 </html>
