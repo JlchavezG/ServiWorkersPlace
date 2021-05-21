@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Arreglos con JavaScript</title>
+  </head>
+  <body>
+    <h3>Arrays Mayor, Menro y Media</h3>
+    <p id="parrafo">Intruce un numeros enterosseparados con una coma para formar un arreglo</p>
+    <input type="button" value="cargar el ejemplo" onclick="cargar();">
+    <input type="text" id="txt" placeholder="coloca el arreglo">
+    <input type="button" value="calcular" onclick="calcular();">
+    <input type="button" value="borrar" onclick="reinicio();">
+    <p id="arreglo"></p>
+    <p id="resultado"></p>
+    <script>
+    function cargar(){
+    document.getElementById("txt").value="5,99,43,12,37";
+    }
+    function reinicio(){
+    location.reload();
+    }
+    function calcular(){
+    var array = document.getElementById("txt").value.split(/,/);
+    var mayor=-Infinity,menor=+Infinity,suma=0,media=0;
+    if(array == ''){
+        alert("El arreglo esta vacío por favor coloca uno o carga el ejemplo");
+     }
+    else{
+    //SUMA
+    for(i=0;i<array.length;i++){
+    suma=parseInt(array[i])+suma;
+    }
+    //MEDIA
+    media=suma/array.length;
+    //MENOR
+    for(i=0;i<array.length;i++){
+    if(parseInt(array[i])<menor) menor=array[i];
+    }
+    //MAYOR
+    for(i=0;i<array.length;i++){
+    if(parseInt(array[i])>mayor) mayor=array[i];
+    }
+    //RESULTADO
+    document.getElementById("resultado").innerHTML="La suma es:"+suma+"<br>"+
+                       "La media es:"+media+"<br>"+
+                       "El mayor es:"+mayor+"<br>"+
+                       "El menor es:"+menor+"<br>"
+     }
+    }
+    </script>
+  </body>
+</html>
